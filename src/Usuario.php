@@ -1,0 +1,27 @@
+<?php
+
+namespace Digitalsite\Usuario;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Usuario extends Model
+{
+
+	protected $table = 'users';
+		public $timestamps = true;
+
+	public function events(){
+
+	return $this->hasMany('\Digitalsite\Calendario\Calendar');
+	}
+
+	public function fichas(){
+
+	return $this->hasMany('\Digitalsite\Pagina\Fichaje');
+	}
+
+
+	protected $hidden = array('password', 'remember_token');
+
+}
+

@@ -1,0 +1,20 @@
+{
+    "name": "digitalsite/usuario",
+    "description": "Generador de usuarios",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "sitedigital",
+            "email": "info@sitedigital.com.co"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Digitalsite\\Usuario\\": "src/"
+        }
+        },
+    "minimum-stability": "dev",
+    "require": {
+        "illuminate/support": "~5"
+    }
+}
