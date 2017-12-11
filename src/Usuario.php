@@ -10,6 +10,11 @@ class Usuario extends Model
 	protected $table = 'users';
 		public $timestamps = true;
 
+
+	protected $fillable = [
+	'name', 'last_name', 'email', 'address', 'phone', 'rol_id', 'password',
+	]
+
 	public function events(){
 
 	return $this->hasMany('\Digitalsite\Calendario\Calendar');
