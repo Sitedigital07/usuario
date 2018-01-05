@@ -12,8 +12,8 @@ class Usuario extends Model
 
 
 	protected $fillable = [
-	'name', 'last_name', 'email', 'address', 'phone', 'rol_id', 'password',
-	]
+	'name', 'last_name', 'email', 'address', 'phone', 'rol_id', 'password', 'remember_token',
+	];
 
 	public function events(){
 

@@ -1,8 +1,6 @@
 <?php
 Route::group(['middleware' => ['auths','administrador']], function (){
-
-	Route::auth();
-
+Auth::routes();
 Route::resource('gestion/usuario', 'Digitalsite\Usuario\Http\UsuarioController');
 Route::resource('gestion/crear-usuario', 'Digitalsite\Usuario\Http\UsuarioController');
 Route::get('/gestion/crear-usuario', function(){
