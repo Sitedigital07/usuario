@@ -110,34 +110,8 @@
 
 <footer>
  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="http://cdn.ckeditor.com/4.6.0/full/ckeditor.js"></script>
-   {{ Html::script('ckfinder/ckfinder.js') }}   
-
-
-
-    {{ Html::script('Usuario/js/Actualizar.js') }}
-    {{ Html::script('//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js') }} 
-
-
-   <script language="javascript" type="text/javascript">
-   CKEDITOR.replace('editor',{
-      filebrowserBrowseUrl: '/browser/browse.php',
-      filebrowserImageBrowseUrl: '/browser/browse.php?type=Images',
-      filebrowserUploadUrl: '/uploader/upload.php',
-      filebrowserImageUploadUrl: '/uploader/upload.php?type=Images',
-      filebrowserWindowWidth: '900',
-      filebrowserWindowHeight: '400',
-      filebrowserBrowseUrl: '../../../ckfinder/ckfinder.html',
-      filebrowserImageBrowseUrl: '../../../ckfinder/ckfinder.html?Type=Images',
-      filebrowserFlashBrowseUrl: '../../../ckfinder/ckfinder.html?Type=Flash',
-      filebrowserUploadUrl: '../../../ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
-      filebrowserImageUploadUrl: '../../../ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
-      filebrowserFlashUploadUrl: '../../../ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'
-    });
-    </script>
-
-
-
+{{ Html::script('validaciones/usuarios/crear-usuario.js') }}
+{{ Html::script('//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js') }} 
 </footer>
  @stop
 

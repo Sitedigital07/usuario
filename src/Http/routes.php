@@ -14,3 +14,13 @@ Route::resource('gestion/usuario/crear', 'Digitalsite\Usuario\Http\UsuarioContro
 Route::resource('gestion/usuario/eliminar', 'Digitalsite\Usuario\Http\UsuarioController@eliminar');
 
 	});
+
+
+Route::resource('mata/meo', 'Digitalsite\Usuario\Http\UsuarioController@meta');
+	
+
+
+ Route::group(['middleware' => ['web']], function (){
+
+
+});
