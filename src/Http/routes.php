@@ -24,3 +24,46 @@ Route::resource('mata/meo', 'Digitalsite\Usuario\Http\UsuarioController@meta');
 
 
 });
+
+
+
+Route::post('/login', function(App\Http\Requests\AccesoRequest $Request) 
+{
+
+
+    $credentials = Input::only('email', 'password'); 
+
+    if ( ! Auth::attempt($credentials))
+    {
+        return Redirect::back()->withMessage('Invalid credentials');
+
+    }
+
+    if (Auth::user()->rol_id == 1) 
+    {
+        return Redirect::to('/gestion/paginas');
+    }
+     elseif (Auth::user()->rol_id == 2 and count($cart) == 0) {
+    
+     
+         return Redirect::to('/');
+     
+    }
+
+    elseif (Auth::user()->rol_id == 2 and count($cart) >= 1) {
+    
+     
+         return Redirect::to('/cart/detail');
+     
+    }
+
+    elseif (Auth::user()->rol_id == 3) {
+    	return Redirect::to('/gestion/avanza');
+    }
+
+    return Redirect::to('/');
+});
+ 
+
+
+ 
