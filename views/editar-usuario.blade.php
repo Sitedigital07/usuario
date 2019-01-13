@@ -27,7 +27,7 @@
                                     <!-- Basic Form Elements Title -->
                                     <div class="block-title">
                                         <div class="block-options pull-right">
-                                            <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-default toggle-bordered enable-tooltip" data-toggle="button" title="Toggles .form-bordered class">No Borders</a>
+                                            
                                         </div>
                                         <h2><strong>Editar</strong> Usuario</h2>
                                     </div>

@@ -70,7 +70,7 @@
                                             <th>Dirección</th>
                                             <th>Teléfono</th>
                                             <th>Rol</th>
-                                            <th class="text-center">Actions</th>
+                                            <th class="text-center">Acciones</th>
                                         </tr>
                                     </thead>
                                     <tbody>
