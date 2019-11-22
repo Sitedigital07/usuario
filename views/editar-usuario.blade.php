@@ -20,10 +20,10 @@
      <div class="block-title">
       <div class="block-options pull-right">
       </div>
-      <h2><strong>Editar</strong> Usuario</h2>
+      <h2><strong>Editar</strong> usuario</h2>
      </div>
      
-     {{ Form::open(array('method' => 'PUT','class' => 'form-horizontal','id' => 'defaultForm', 'url' => array('gestion/usuario/actualizar',$usuario->id))) }}
+     {{ Form::open(array('method' => 'POST','class' => 'form-horizontal','id' => 'defaultForm', 'url' => array('gestion/usuario/actualizar',$usuario->id))) }}
 
       <div class="form-group">
        <label class="col-md-3 control-label" for="example-text-input">Nombre</label>

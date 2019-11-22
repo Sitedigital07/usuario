@@ -20,7 +20,7 @@
     <div class="block-title">
      <div class="block-options pull-right">
      </div>
-     <h2><strong>Crear</strong> Usuario</h2>
+     <h2><strong>Crear</strong> usuario</h2>
     </div>
     
     {{ Form::open(array('method' => 'POST','class' => 'form-horizontal','id' => 'defaultForm', 'url' => array('gestion/usuario/crear'))) }}
