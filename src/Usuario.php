@@ -8,7 +8,7 @@ class Usuario extends Model{
  public $timestamps = true;
 
  protected $fillable = [
- 'name', 'last_name', 'email', 'address', 'phone', 'rol_id', 'password', 'remember_token',
+ 'name', 'compania', 'documento', 'tipo_documento', 'celular', 'pais', 'ciudad', 'email', 'address', 'phone', 'rol_id', 'password', 'remember_token',
  ];
 
  public function events(){
