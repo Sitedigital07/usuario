@@ -80,7 +80,8 @@
        {{ Form::select('level', ['' => '-- Seleccione rol --',
        '1' => 'Administrador',
        '2' => 'Comprador',
-       '3' => 'Fichador'], null, array('class' => 'form-control','placeholder'=>'Seleccione rol')) }}
+       '3' => 'Fichador',
+       '4' => 'Recepcion'], null, array('class' => 'form-control')) }}
       </div>
     </div>
 
